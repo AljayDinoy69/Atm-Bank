@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish ATM Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="atm-container">
+        <h1>Dinoy ATM Bankrop</h1>
+        <div class="screen">
+            <div id="message">Welcome! Please insert your card.</div>
+            <div id="balance"></div>
+        </div>
+        <div class="keypad">
+            <button onclick="enterPin(1)">1</button>
+            <button onclick="enterPin(2)">2</button>
+            <button onclick="enterPin(3)">3</button>
+            <button onclick="enterPin(4)">4</button>
+            <button onclick="enterPin(5)">5</button>
+            <button onclick="enterPin(6)">6</button>
+            <button onclick="enterPin(7)">7</button>
+            <button onclick="enterPin(8)">8</button>
+            <button onclick="enterPin(9)">9</button>
+            <button onclick="clearPin()">Clear</button>
+            <button onclick="enterPin(0)">0</button>
+            <button onclick="submitPin()">Enter</button>
+        </div>
+        <div class="actions">
+            <button onclick="withdraw()">Withdraw</button>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="checkBalance()">Check Balance</button>
+            <button onclick="exit()">Exit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
